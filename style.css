@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,13 @@ body {
     /* background-color: rgb(206, 206, 206); */
     background-color: white;
 }
+
+.anchor{
+    display:block;
+    height:70px; /* this is the height of your header */
+    margin-top:-70px; /* this is again negative value of the height of your header */
+    visibility:hidden;
+ }
 
 /* HEADER */
 header {
@@ -188,4 +196,34 @@ main {
         margin-right: 50px;
         padding-left: 40px;
     }
+}
+
+/* ABOUT SECTION */
+#about-section {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin-top: 50px;
+}
+
+#about-image-container {
+    display: grid;
+
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
+}
+
+#about-image {
+    background-image: url(resources/images/board-of-directors.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    grid-area: 2 / 2;
+    border-radius: 10px;
+}
+
+#about-content-container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 5%;
 }
