@@ -115,8 +115,7 @@ header {
 
 
 /* MAIN SITE AREA */
-#main-container {  
-    height: 1500px;
+#main-container { 
     display: grid;
     justify-content: center;
 }
