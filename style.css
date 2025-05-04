@@ -212,7 +212,7 @@ main {
 #about-section {
     display: grid;
     grid-template-columns: 3fr 4fr;
-    margin-top: 50px;
+    padding-top: 100px;
 }
 
 #about-image-container {
@@ -236,4 +236,71 @@ main {
     display: grid;
     grid-template-rows: 50px 1fr;
     padding: 5%;
+}
+
+/* EVENTS SECTION */
+#calendar-heading {
+    text-align: center;
+}
+
+#notable-title {
+    margin-left: 15px;
+}
+
+#events-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#events-section-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#calendar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr .5fr;
+    grid-template-rows: 50px;
+    grid-auto-rows: min-content;
+}
+
+#calendar-container h4 {
+    color: #FFCE00;
+    /* border: 2px solid #FFCE00; */
+    background-color: black;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#calendar-container p {
+    font-size: 13px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 2px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#notable-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.notable-card {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* CONTACT SECTION */
+#contact-section {
+    height: 500px;
+    background-color: gray;
 }
